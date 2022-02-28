@@ -1,0 +1,22 @@
+.tableList{
+    color: rgba(244, 244, 245, 0.6);
+    display: block;
+    position: relative;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background: var(--bg-box);
+    // box-shadow: 0 25px 20px -20px rgb(0 0 0 / 10%), 0 0 15px rgb(0 0 0 / 6%);
+}
+
+.listHeader{
+    display: flex;
+    justify-content: space-between;
+}
+.border-bottom-table{
+    border-bottom: 1px solid var(--bg-gray) !important;
+}
+@media (max-width:768px) {
+    .listHeader{
+     padding: 5px 10px;
+    }
+}

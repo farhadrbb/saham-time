@@ -1,0 +1,99 @@
+@font-face {
+    src: url("/assets/fonts/IRANSansWeb/IRANSansWeb.eot");
+    src: url("/assets/fonts/IRANSansWeb/IRANSansWeb.ttf");
+    src: url("/assets/fonts/IRANSansWeb/IRANSansWeb.woff");
+    src: url("/assets/fonts/IRANSansWeb/IRANSansWeb.woff2");
+    font-family: "iransans";
+}
+@mixin item-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin btn{
+   @include item-center;
+    border-radius: 5px;
+    font-size: 13px;
+    color: var(--bg-lightgray);
+    border: 1px solid var(--bg-lightgray);
+    padding: 5px 10px;
+    background-color: transparent;
+    &:hover{
+      color: var(--bg-hover-btn);
+      border-color: var(--bg-hover-btn);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px var(--bg-gray); 
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--bg-gray); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:  rgb(89, 89, 89); 
+  }
+
+
+
+* {
+    font-family: "iransans" !important;
+    direction: rtl !important;
+}
+body{
+    direction: rtl !important;
+    text-align: right;
+    --bg-box :rgba(0, 0, 0, 0.24);
+    --bg-row :#0f1125;
+    --bg-hover-btn:aquamarine;
+    --bg-gray:gray;
+    --bg-lightgray:lightgray
+}
+.MuiTabs-indicator{
+    background-color: aquamarine !important;
+}
+.MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected {
+    color: aquamarine !important;
+    border: 0;
+}
+.MuiFormControl-root .MuiFormControl-fullWidth .MuiTextField-root.css-wb57ya-MuiFormControl-root-MuiTextField-root{
+    border: 1px solid white !important;
+}
+.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiChip-deleteIcon.MuiChip-deleteIconMedium.MuiChip-deleteIconColorDefault.MuiChip-deleteIconOutlinedColorDefault{
+    margin: 0;
+    color: var(--bg-gray);
+}
+.MuiButtonBase-root.MuiChip-root.MuiChip-filled.MuiChip-sizeMedium.MuiChip-colorDefault.MuiChip-deletable.MuiChip-deletableColorDefault.MuiChip-filledDefault.MuiAutocomplete-tag.MuiAutocomplete-tagSizeMedium.css-7lrruy-MuiButtonBase-root-MuiChip-root{
+    padding: 5px;
+    color: var(--bg-gray);
+    background: var(--bg-box);
+}
+
+.MuiAutocomplete-root.MuiAutocomplete-hasClearIcon.MuiAutocomplete-hasPopupIcon.filterAutocomplete.css-7qlho3-MuiAutocomplete-root #multiple-limit-tags-label ,
+.MuiAutocomplete-root.MuiAutocomplete-hasPopupIcon.filterAutocomplete.css-7qlho3-MuiAutocomplete-root #multiple-limit-tags-label ,
+.MuiAutocomplete-root.MuiAutocomplete-hasPopupIcon.filterAutocomplete.css-7qlho3-MuiAutocomplete-root .MuiSvgIcon-root ,
+.MuiAutocomplete-root.MuiAutocomplete-hasClearIcon.MuiAutocomplete-hasPopupIcon.filterAutocomplete.css-7qlho3-MuiAutocomplete-root .MuiSvgIcon-root
+{
+    color: var(--bg-gray);
+}
+.MuiAutocomplete-root.MuiAutocomplete-hasClearIcon.MuiAutocomplete-hasPopupIcon.filterAutocomplete.css-7qlho3-MuiAutocomplete-root .MuiOutlinedInput-input.MuiInputBase-input,
+.MuiAutocomplete-root.MuiAutocomplete-hasPopupIcon.filterAutocomplete.css-7qlho3-MuiAutocomplete-root .MuiOutlinedInput-input.MuiInputBase-input{
+    background:var(--bg-box);
+    color:var(--bg-gray);
+}
+.MuiAutocomplete-root.MuiAutocomplete-hasClearIcon.MuiAutocomplete-hasPopupIcon.filterAutocomplete.css-7qlho3-MuiAutocomplete-root #multiple-limit-tags,
+.MuiAutocomplete-root.MuiAutocomplete-hasPopupIcon.filterAutocomplete.css-7qlho3-MuiAutocomplete-root #multiple-limit-tags{
+    border: 1px solid var(--bg-box);
+    border-radius: 5px;
+}

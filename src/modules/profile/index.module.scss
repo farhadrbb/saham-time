@@ -1,0 +1,145 @@
+@import "../../index.scss";
+.profile-parent {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-box);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+.profile-parent-tabs {
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-box);
+  border-radius: 10px;
+}
+.profile_cirlce {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: var(--bg-gray);
+}
+.proflie-edit-parent {
+  height: 600px;
+}
+
+.button-follow {
+  @include btn;
+  width: 70% !important;
+  margin: 50px 0;
+}
+.button-level {
+  @include btn;
+  width: 100px;
+  margin: 50px 0;
+}
+.proflie-hotList-parent {
+  height: 600px;
+}
+.search-box {
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--bg-lightgray);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &:hover {
+    border-color: var(--bg-hover-btn);
+    color: var(--bg-hover-btn);
+  }
+}
+.namad-box {
+  width: 100%;
+  height:550px;
+  background-color: var(--bg-box);
+  // border: 1px solid var(--bg-lightgray);
+  border-radius: 10px;
+  color: var(--bg-gray);
+  overflow: hidden;
+}
+.namad-list {
+  width: 100%;
+  height: 90%;
+  overflow-y: auto;
+}
+.namad-plus {
+  height: 50px;
+  // borderBottom: "1px solid gray",
+  width: 97%;
+  border-radius: 5px;
+  color: white;
+}
+.namad-upload {
+  width: 100%;
+  height: 550px;
+  border-radius: 5px;
+  // border: 1px dotted var(--bg-lightgray);
+  background-color: var(--bg-box);
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.row-upload-namad {
+  width: 97%;
+  height: 45px;
+  // border-bottom: 1px solid rgb(90, 90, 90);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.hover {
+  &:hover {
+    color: var(--bg-hover-btn);
+    cursor: pointer;
+  }
+}
+.input-search {
+  width: 70%;
+  height: 100%;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  color: white;
+  &:focus {
+    border: 0;
+    outline: 0;
+  }
+}
+.table-hotlist-parent {
+  width: 100%;
+  height: 550px;
+  border-radius: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 15px 10px;
+}
+.table-hotlist-row {
+  width: 97%;
+  height: 50px;
+  border-radius: 8px;
+}
+.drag-botton {
+  @include btn;
+}
+
+@media (max-width: 767px) {
+
+  .namad-box {
+    height: 400px;
+  }
+  .namad-upload {
+    height: 400px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .profile_cirlce {
+    width: 90px;
+    height: 90px;
+  }
+}
